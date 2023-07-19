@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(0, 0%, 94%);
+}
+.container {
+  width: 550px;
+  height: 400px;
+  background-color: white;
+  border-radius: .5rem;
+  border-bottom-right-radius: 30%;
+}
+input[type="number"] {
+  width: 120px;
+  height: 40px;
+  margin: 10px 0;
+  padding: 20px;
+  -moz-appearance: textfield;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.upper-part {
+  margin-top: 30px;
+  width: 450px;
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  margin-left: 15px;
+}
+hr {
+  width: 450px;
+  margin: 50px 30px 10px 27px;
+  border: none;
+  border-bottom: 1px solid hsl(0, 1%, 44%);
+}
+.button-circle {
+  background-color: hsl(259, 100%, 65%);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  position: relative;
+  bottom: 244px;
+  left: 447px;
+}
+.button-circle:hover {
+  cursor: pointer;
+}
+/* djguesadfsd */
+.lower-part {
+  font-size: 1.8rem;
+  margin-left: 30px;
+}
+.invalid {
+  border: 2px solid hsl(0, 100%, 67%);
+}
+span {
+  color: hsl(259, 100%, 65%);
+}
+.error {
+  color: hsl(0, 100%, 67%);
+  font-size: 14px;
+}
+.error1 {
+  color: hsl(0, 100%, 67%);
+  font-size: 14px;
+}
+@media (max-width:414px){
+  body{
+    padding:15px;
+  }
+  .container{
+     width: 380px;
+  height: 600px;
+  border-radius: .4rem;
+  border-bottom-right-radius: 45%;
+  }
+  input[type="number"]{
+    border-radius: .5rem;
+    width:90px;
+    height: 50px;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-right: 15px;
+  }
+  .upper-part{
+    width: 300px;
+  }
+  hr{
+    margin: 60px auto;
+    width: 300px;
+  
+  }
+  .button-circle{
+    bottom:300px;
+    left: 130px;
+    /* position: static;
+    margin-left: 125px;
+    margin-top:-370px; */
+  }
+  .lower-part{
+    margin: 0;
+    padding: 0;
+    margin-left: 25px;
+    /* margin-top:100px;
+    margin-left: 30px;*/
+  } 
+  p{
+    padding: 0;
+    margin: 0;
+  }
+}
